@@ -9,6 +9,7 @@
 /*The css for the menu button*/
 .menu {
   width: 100px;
+  order: 3;
 }
 
 /* header bar */
@@ -29,6 +30,7 @@ header {
   font-size: 30px;
   color: rgb(255, 255, 255);
   cursor: default;
+  order: -1;
 }
 
 .logo span {
@@ -42,6 +44,7 @@ header {
   text-decoration: none;
   margin-right: 40px;
   font-weight: 500;
+  order: 1;
 }
 
 .navigation a:hover {
@@ -57,6 +60,7 @@ header {
   border-radius: 10px;
   border: 2px solid rgb(238, 65, 65);
   font-weight: 500;
+  order: 2;
 }
 
 .talk:hover {
@@ -159,16 +163,39 @@ header {
   color: white;
 }
 
+.menu {
+  display: none;
+}
+
 /*Working the media queries*/
 
-/*Media queries for devices with max-width of 320*/
+/*Media queries for devices with max-width of 320px*/
 @media (max-width: 320px) {
   .menu {
+    display: inline;
     width: 40px;
     padding-right: 20px;
+    cursor: pointer;
   }
+
   .navigation {
     display: none;
+    position: absolute;
+    background: #000000;
+    top: 42px;
+    left: 50%;
+    width: 50%;
+    z-index: 99;
+    height: 250px;
+  }
+
+  .navigation a {
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .menu:hover + .navigation {
+    display: block;
   }
 
   .logo {
