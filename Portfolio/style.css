@@ -170,7 +170,7 @@ header {
 /*Working the media queries*/
 
 /*Media queries for devices with max-width of 320px*/
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .menu {
     display: inline;
     width: 40px;
