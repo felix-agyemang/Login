@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Crimson', sans-serif;
+}
+
+/* header bar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+}
+
+/* the Felix logo */
+.logo{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+
+.logo span{
+    color: rgb(238, 65, 65);
+}
+
+/* navigation links */
+.navigation a{
+    font-size: 20px;
+    color: rgb(238, 65, 65);
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+}
+
+.navigation a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* Let's talk button */
+.talk{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 30px;
+    background: rgb(238, 65, 65);
+    border-radius: 10px;
+    border: 2px solid rgb(238, 65, 65);
+    font-weight: 500;
+}
+
+.talk:hover{
+    color: rgb(238, 65, 65);
+    background: transparent;
+}
+
+
+/* main page */
+.home{
+    position: relative;
+    width: 1143px;
+    height: 100vh;
+    background: url(man3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+/* main text */
+.content{
+    max-width: 500px;
+    color: #000000;
+}
+
+.content h2{
+    font-size: 40px;
+}
+
+.content h2 span{
+    color: rgb(238, 65, 65);
+}
+
+.content h4{
+    font-size: 30px;
+    color: #fff;
+}
+
+.content p{
+    padding: 10px 0 40px 0;
+    color: #000000;
+}
+
+/* Hire me and See projects buttons */
+.group a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    background: rgb(238, 65, 65);
+    border-radius: 10px;
+    border: 2px solid rgb(238, 65, 65);
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.group a:hover:nth-child(1){
+    color: rgb(238, 65, 65);
+    background: transparent;
+}
+
+.group a:nth-child(2){
+    color: rgb(238, 65, 65);
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.group a:hover:nth-child(2){
+    color: #fff;
+    background: rgb(238, 65, 65);
+}
+
+/* social media icons */
+.socials{
+    position: absolute;
+    bottom: 100px;
+}
+
+.socials a{
+    background: rgb(238, 65, 65);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid rgb(238, 65, 65);
+    outline: 2px solid rgb(238, 65, 65);
+    transition: 0.5s;
+}
+
+.socials a:hover{
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.socials a i{
+    color: white;
+}
+
