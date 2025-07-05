@@ -10,19 +10,28 @@
 <body>
 
     <div class="login">
-       <h1> WELCOME</h1>
-        <form action="#">
-            <p><input type="email" name="email" placeholder="email/username"></p>
-            <p><input type="password" name="password" placeholder="password"></p>
-            <p id="log"><button type="login">LOGIN</button></p>
-            <p>Don't have account? <a href="#">Register</a></p>
-            <hr>
-            <p>OR LONGIN WITH</p>
-            <p id="whats"><button type="submit"><i class="fa-brands fa-whatsapp"></i> Whatsapp</button></p>
-            <p id="fb"><button type="submit"><i class="fa-brands fa-facebook"></i> Facebook</button></p>
-            <p id="go"><button type="submit"><i class="fa-brands fa-google"></i> Google</button></p>
-        </form>
-    </div>
-    
+        <h1> WELCOME</h1>
+    <form id="loginForm">
+        <p>
+        <input type="email" name="email" id="email" placeholder="email/username" required />
+        </p>
+        <p>
+        <input type="password" name="password" id="password" placeholder="password" required />
+        </p>
+
+        <p id="log"><button type="submit">LOG IN</button></p>
+
+        <p id="message"></p> <!-- For showing login result -->
+
+        <p>Don't have account? <a href="#">Register</a></p>
+
+        <hr>
+
+        <p>Or Log In With</p>
+        <p id="fb"><button type="button"><i class="fa-brands fa-facebook"></i> Facebook</button></p>
+        <p id="go"><button type="button"><i class="fa-brands fa-google"></i> Google</button></p>
+    </form>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
