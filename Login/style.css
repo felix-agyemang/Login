@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url(river3.jpg) no-repeat;
+    /* background: url(river3.jpg) no-repeat; */
     background-size: cover;
 }
 
@@ -14,21 +14,25 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 3px 3px 3px 5px rgb(235, 232, 232);
+    border-radius: 10px;
+    padding: 40px 40px;
 }
 
 /* heading */
 .login h1{
     color: rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .login p{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
-    color: rgb(62, 13, 241);
-    padding: 10px 10px;
+    color: #000000;
+    padding: 5px 5px;
 }
 
 /* input textareas */
@@ -39,18 +43,31 @@ body{
     padding: 10px 20px;
     margin: 10px 10px;
     border-radius: 10px;
-    text-align: center;
+    text-align: start;
+    border: 1px solid rgb(110, 105, 105);
+}
+
+.login ::placeholder{
+    color: rgb(77, 75, 75);
+    font-size: 18px;
+}
+
+.login h4{ 
+    margin-left: 9px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
 }
 
 /* login button */
 .login #log button{
     font-size: 18px;
     font-weight: 500;
-    border-radius: 15px;
+    border-radius: 8px;
     border: none;
     color: white;
-    background-color: rgb(55, 100, 247);
-    padding: 10px 55px;
+    background-color: #3764f7;
+    padding: 10px 120px;
 }
 
 .login #log button:hover{
@@ -60,34 +77,5 @@ body{
 /* register link */
 .login a{
     text-decoration: none;
-    color: rgb(255, 238, 0);
-}
-
-/* facebook login */
-.login #fb button{
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 30px;
-    border: none;
-    color: white;
-    background-color: rgb(44, 100, 221);
-    padding: 8px 10px;
-}
-
-.login #fb button:hover{
-    color: rgb(99, 189, 241);
-}
-
-/* google login */
-.login #go button{
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 30px;
-    border: none;
-    background-color: white;
-    padding: 8px 20px;
-}
-
-.login #go button:hover{
-    color: rgb(99, 189, 241);
+    color: #3764f7;
 }
